@@ -18,7 +18,7 @@ def nosotros():
     return render_template('sitio/nosotros.html')
 
 
-@app.route('/admin')
+@app.route('/admin/')
 def admin_index():
     return render_template('admin/index.html')
 
@@ -26,6 +26,11 @@ def admin_index():
 @app.route('/admin/login')
 def admin_login():
     return render_template('admin/login.html')
+
+
+@app.route('/admin/libros')
+def admin_libros():
+    return render_template('admin/libros.html')
 
 
 if __name__ == '__main__':
